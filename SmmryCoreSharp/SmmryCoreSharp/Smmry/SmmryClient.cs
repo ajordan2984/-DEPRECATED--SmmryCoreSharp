@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmmryCoreSharp.Smmry
 {
-    class SmmryClient
+    public class SmmryClient
     {
         #region Privte Members
         private SmmryParameters defaultParameters = null;
