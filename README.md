@@ -7,7 +7,7 @@ https://github.com/ghostiek/SmmrySharp
 
 ## Updates
 * Updated from netstandard2.0 to netcoreapp3.1.
-* Updated error checking to block null or empty parameters,Api, Url, and both Url and Text passed as parameters.
+* Updated error checking to block null, empty, or whitespace parameters in the: Api, Url, and either both Url and Text or neither one.
 * Added in **sm_api_input** to SmmryParameters.cs.
     * **sm_api_input** allows a "Text" parameter so that a block of text can be summarized instead of passing a URL to SMMRY.
 

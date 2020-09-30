@@ -32,9 +32,14 @@ namespace SmmryCoreSharp.Smmry
                 throw new InvalidOperationException("The ApiKey cannot be null or empty.");
             }
 
-            if (!string.IsNullOrWhiteSpace(parameters.Url) && !string.IsNullOrEmpty(parameters.Text))
+            if (!string.IsNullOrWhiteSpace(parameters.Url) && !string.IsNullOrWhiteSpace(parameters.Text))
             {
                 throw new InvalidOperationException("Either \"Url\" or \"Text\" must be part of your request but not both.");
+            }
+
+            if (string.IsNullOrWhiteSpace(parameters.Url) && string.IsNullOrWhiteSpace(parameters.Text))
+            {
+                throw new InvalidOperationException("Either \"Url\" or \"Text\" must be part of your request.");
             }
 
             defaultParameters = parameters;
