@@ -19,7 +19,9 @@ Newtonsoft        | 12.0.3
 
 ## Example
 
-This is how you would make your request
+This is how you would make your request.
+Note: Every parameter is optional except your API key and website URL.
+
 ```cs
 var client = new SmmryClient(new SmmryParameters()
             {
@@ -33,4 +35,21 @@ var client = new SmmryClient(new SmmryParameters()
             
 var smmry = client.Download();
 ```
-Note: Every parameter is optional except your API key and website URL
+
+**OR**
+
+```cs
+var text = File.ReadAllText("exampleTextFile.txt");
+
+client = new SmmryClient(new SmmryParameters()
+            {
+                ApiKey = "YOUR API KEY HERE",
+                Text = text,
+                SentenceCount = 3,
+                KeywordCount = 24,
+                IncludeBreaks = false,
+                IncludeQuotes = false
+            });
+            
+var smmry = client.Download();
+```

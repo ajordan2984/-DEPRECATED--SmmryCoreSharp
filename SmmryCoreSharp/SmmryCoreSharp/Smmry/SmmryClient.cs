@@ -11,7 +11,7 @@ namespace SmmryCoreSharp.Smmry
     {
         #region Privte Members
         private SmmryParameters defaultParameters = null;
-        string defaultSmmryEndpointUrl = "https://api.smmry.com/";
+        private string defaultSmmryEndpointUrl = "https://api.smmry.com/";
         #endregion
 
         #region Constructors
