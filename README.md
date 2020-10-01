@@ -41,7 +41,7 @@ var smmry = client.Download();
 ```cs
 var text = File.ReadAllText("exampleTextFile.txt");
 
-client = new SmmryClient(new SmmryParameters()
+var client = new SmmryClient(new SmmryParameters()
             {
                 ApiKey = "YOUR API KEY HERE",
                 Text = text,
